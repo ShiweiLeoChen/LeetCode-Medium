@@ -38,7 +38,28 @@ public class AddTwoNumber {
         return res;
     }
 
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2, int carry) {
+        if (l1 == null && l2 == null && carry == 0) {
+            return null;
+        }
+
+        if (l1 != null) {
+            carry += l1.val;
+            l1 = l1.next;
+        }
+        if (l2 != null) {
+            carry += l2.val;
+            l2 = l2.next;
+        }
+
+        ListNode cur = new ListNode(carry%10);
+        cur.next = addTwoNumbers(l1, l2, carry/10);
+
+        return cur;
+    }
+
     public static void main(String[] args) {
         System.out.println(addTwoNumbers(ListNode.build(args[0]), ListNode.build(args[1])));
+        System.out.println(addTwoNumbers(ListNode.build(args[0]), ListNode.build(args[1]), 0));
     }
 }
