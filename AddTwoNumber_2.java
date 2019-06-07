@@ -1,6 +1,6 @@
 import __HELPER_CLASSES__.ListNode;
 
-public class AddTwoNumber {
+public class AddTwoNumber_2 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode t1 = l1;
         ListNode t2 = l2;

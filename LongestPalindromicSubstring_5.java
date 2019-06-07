@@ -1,4 +1,4 @@
-public class LongestPalindromicSubstring {
+public class LongestPalindromicSubstring_5 {
     public static boolean isPalindrome(String s) {
         if (s.equals("")) {
             return false;

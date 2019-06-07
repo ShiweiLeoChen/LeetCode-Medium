@@ -1,6 +1,6 @@
 import __HELPER_CLASSES__.StrIntArr;
 
-public class MostWaterContainer {
+public class MostWaterContainer_11 {
     public static int maxAreaBruteForce(int[] height) {
         int max = 0;
         for (int i = 0; i < height.length-1; i++) {

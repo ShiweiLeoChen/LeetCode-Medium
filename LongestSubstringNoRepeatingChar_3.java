@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LongestSubstringNoRepeatingChar {
+public class LongestSubstringNoRepeatingChar_3 {
     public static int lengthOfLongestSubstring(String s) {
         if (s.isEmpty()) {
             return 0;
