@@ -1,1 +1,1 @@
-int TOTAL_SOLVED = 5;
+int TOTAL_SOLVED = 6;
